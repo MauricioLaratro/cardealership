@@ -1,0 +1,107 @@
+.company{
+    background-image: url(../image/company-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-block-size: 100vh;
+}
+
+.company-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-self: center;
+    justify-self: center;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.4 );
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 8px );
+    border-radius: .5rem;
+    padding: 2rem;
+    border: 2px solid #858C94;
+
+}
+
+.company-description{
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+}
+
+.company-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.company-info{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+.company-info i{
+    font: var(--headLine2);
+}
+
+.company-brands{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-self: flex-start;
+    gap: 1.5rem;
+
+    border: 2px solid #858C94;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.4 );
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 8px );
+    border-radius: .5rem;
+    padding-inline: 1rem;
+    padding-block: 1rem;
+}
+
+.brands-title{
+    padding-inline: .5rem;
+    background: var(--buttonColor);
+    border-radius: .4rem;
+}
+
+.brands-names{
+    padding-inline: .5rem;
+}
+
+.brands-names h3{
+    margin-block-end: .5rem;
+    border-block-end: 2px solid var(--buttonColor);
+    font-weight: bold;
+}
+
+.brands-names a{
+    text-decoration: none;
+    color: inherit;
+    transition: .3s;
+}
+
+.brands-names a:hover{
+    color: var(--buttonColor);
+}
+
+
+.company-image{
+    block-size: fit-content;
+    max-inline-size: 40rem;
+    min-inline-size: 18.75rem;
+    border: 2px solid #858C94;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.company-image img{
+    max-block-size: 100%;
+    max-inline-size: 100%;
+    aspect-ratio: 16 / 9;
+    vertical-align: middle;
+
+}

@@ -1,0 +1,39 @@
+:root{
+    --baseFontFamily: 'Roboto', sans-serif;
+    --secondaryFontFamily: 'Playfair Display', serif;
+    --headLine1: bold 3rem/3.25rem var(--baseFontFamily);
+    --headLine2: normal 1.5rem/2rem var(--baseFontFamily);
+    --headLine3: normal 1.25rem/1.5rem var(--baseFontFamily);
+    --headLine4: normal 1rem/1.5rem var(--baseFontFamily);
+    --buttonFont: bold 1rem/2rem var(--baseFontFamily);
+
+    --buttonColor: #ff8906;
+
+
+    --contentInlineSize: 1200px;
+    --gridTemplateColumns: 1fr var(--contentInlineSize) 1fr;
+}
+
+body{
+    margin: 0;
+}
+
+body h1{
+    font: var(--headLine1);
+    margin: 0;
+}
+
+body h2{
+    font: var(--headLine2);
+    margin: 0;
+}
+
+body h3{
+    font: var(--headLine3);
+    margin: 0;
+}
+
+body h4{
+    font: var(--headLine4);
+    margin: 0;
+}

@@ -1,0 +1,85 @@
+.contact{
+    background-image: url(../image/contact-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-block-size: 100vh;
+}
+
+.contact-content{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 2rem;
+    align-items: flex-start;
+    margin-block: 3rem;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.4 );
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 8px );
+    border-radius: .5rem;
+    padding: 2rem;
+    border: 2px solid #858C94;
+}
+
+
+
+
+.location{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.map-container{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.4 );
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 8px );
+    border-radius: .5rem;
+    padding-inline: 1rem;
+    padding-block: 1rem;
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #858C94;
+    overflow: hidden;
+}
+
+.location-title{
+    text-transform: uppercase;
+    color: var(--buttonColor);
+    text-decoration: underline;
+}
+
+.contact-description{
+    display: flex;
+    grid-column: 1 / -1;
+    gap: 2rem;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.4 );
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 8px );
+    border-radius: .5rem;
+    border: 2px solid #858C94;
+    padding: 1rem;
+    color: white;
+}
+
+.contact-description a{
+    text-decoration: none;
+    color: inherit;
+    transition: .3s;
+}
+
+.contact-description a:hover{
+    color: var(--buttonColor);
+}
+
+.contact-description img{
+    vertical-align: middle;
+    margin-inline-end: .5rem;
+}

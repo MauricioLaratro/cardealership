@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;0,900;1,300;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>DealerShip</title>
+</head>
+<body>
+    <section class="financing inset-wrapper">
+        <div class="financing-content">
+            <div class="financing-options">
+                <div class="financing-card">
+                    <h3>Fixed Rate</h3>
+                    <img src="../image/tasa-fija.svg" alt="">
+                    <h4>Fixed rate monthly installment</h4>
+                </div>
+                <div class="financing-card">
+                    <h3>Leader Plan</h3>
+                    <img src="../image/leader-plan.svg" alt="">
+                    <h4>Semi-annual payments </h4>
+                </div>
+                <div class="financing-card">
+                    <h3>Leasing</h3>
+                    <img src="../image/leasing.svg" alt="">
+                    <h4>Finance up to 100% of a new car while you use it. No down payment required</h4>
+                </div>
+                <div class="financing-card">
+                    <h3>Savings Plan</h3>
+                    <img src="../image/savings-plan.svg" alt="">
+                    <h4>Savings plan in which. A closed group of people make monthly contributions, destined to the acquisition of their new car. </h4>
+                </div>
+            </div>
+
+            <form class="form" id="form" action="https://formsubmit.co/mauriciolaratro@gmail.com" method="POST">
+                <h2 class="title"><strong>let's talk</strong></h2>
+                <h3 class="subtitle">Get advice on the different financing options</h3>        
+                <label for="name">
+                    <h4>Name</h4>
+                </label>
+                    <input required name="name" id="name" type="text" placeholder="Juan Lucas López">
+                <label for="email">
+                    <h4>Email</h4>
+                </label>
+                    <input required name="email" id="email" type="email" placeholder="Email">
+
+                <label for="financing">
+                    <h4>Financing Options</h4>
+                    <select class="select-financing" name="Select Financing" required>
+                        <option value="Fixed Rate">Fixed Rate</option>
+                        <option value="Leader Plan">Leader Plan</option>
+                        <option value="Leasing">Leasing</option>
+                        <option value="Savings Plan">Savings Plan</option>
+                    </select>
+                </label>
+
+                <label for="message">
+                    <h4>Message</h4>
+                </label>
+                    <textarea required name="message" placeholder="Message" id="message" cols="30" rows="10"></textarea>
+                    <button class="form-button" type="submit">Send Message</button>
+                    <input type="hidden" name="_captcha" value="false">
+            </form>
+        </div>
+    </section>
+</body>

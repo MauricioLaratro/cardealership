@@ -1,0 +1,25 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: var(--gridTemplateColumns);
+    grid-template-areas: 'wrapper-start content wrapper-end';
+}
+
+.inset-wrapper{
+    display: grid;
+    grid-template-columns: var(--gridTemplateColumns);
+    grid-template-areas: '. content .';
+}
+
+.inset-wrapper [class*="content"]{
+    grid-area: content;
+}
+
+.wrapper section{
+    grid-column: 1 / -1;
+}
+
+@media screen and (max-width: 1400px){
+    :root{
+        --gridTemplateColumns: auto 1fr auto;
+    }
+}
