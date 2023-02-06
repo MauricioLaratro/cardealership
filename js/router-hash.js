@@ -65,7 +65,7 @@ const locationHandler = async () => {
 	// set the description of the document to the description of the route
 	document
 		.querySelector('meta[name="description"]')
-		// .setAttribute("main-page", route.description);
+		.setAttribute("main-page", route.description);
 };
 // create a function that watches the hash and calls the urlLocationHandler
 window.addEventListener("hashchange", locationHandler);
