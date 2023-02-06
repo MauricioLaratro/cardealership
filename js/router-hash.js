@@ -17,10 +17,25 @@ const routes = {
 		title: "vehicles | " + pageTitle,
 		description: "This is the about page",
 	},
+	vehicles2: {
+		template: "../pages/vehicles2.html",
+		title: "vehicles2 | " + pageTitle,
+		description: "This is the about page",
+	},
 	contact: {
 		template: "../pages/contact.html",
 		title: "Contact Us | " + pageTitle,
 		description: "This is the contact page",
+	},
+	company: {
+		template: "../pages/company.html",
+		title: "Company | " + pageTitle,
+		description: "This is the company page",
+	},
+	financing: {
+		template: "../pages/financing.html",
+		title: "Financing | " + pageTitle,
+		description: "This is the financing page",
 	},
 
 
@@ -57,34 +72,3 @@ const locationHandler = async () => {
 window.addEventListener("hashchange", locationHandler);
 // call the urlLocationHandler to load the page
 locationHandler();
-
-
-
-
-const handleLocation = async () => {
-    const path = window.location.pathname;
-    const route = routes[path] || routes[404];
-    const html = await fetch(route).then((data) => data.text());
-    // Almaceno el elemento de mainpage en una variable para acceder a sus atributos después
-    let mainpage = document.getElementById("main-page");
-    // Reemplazo el contenido del elemento con .innerHTML por el valor de la constante html (ya estaba en el código)
-    mainpage.innerHTML = html;
-    // Obtengo la dirección de la página con .baseURI
-    let uri = mainpage.baseURI;
-    /* Busco la posición de la URL en donde aparece el "#" del slide con .indexOf y utilizo esa
-    posición para obtener solamente el # de slide en el que estoy haciendo click con .substring.
-    En caso de que esté en el index (cuando no existe el slider) la variable uri tendrá solamente
-    el valor de la uri actual. */
-    uri = uri.substring(uri.indexOf('#'));
-    /* Verifico que uri tenga un "#". Si entra al if es porque ya estoy haciendo click en algún número
-    del slide. */
-    if(uri.includes("#")){
-        /* Hago lo mismo que hice en la línea 38, pero le añado el + 1 para obtener el número
-        del slide sin el "#". */
-        let sliderID = uri.substring(uri.indexOf('#') + 1)
-        // Utilizo el sliderID para obtener el elemento html correspondiente
-        let slider = document.getElementById(sliderID);
-        // Seteo la propiedad de opacity a 1 para que se vea
-        slider.setAttribute("style","display:flex" /*,"opacity:1"*/);
-    }
-};
