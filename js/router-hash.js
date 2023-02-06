@@ -85,7 +85,7 @@ sliderNavigation.forEach( ( cadaMiniImage , i )=> {
 
 		slider.style.transform = `translateX(${ operation }%)`
 
-		sliderNavigation.forEach( ( cadaMiniImage , index )=>{
+		sliderNavigation.forEach( ( cadaMiniImage , i )=>{
 			sliderNavigation[i].classList.remove('ativo')
 		})
 		punto[i].classList.add('activo')
