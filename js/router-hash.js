@@ -1,4 +1,3 @@
-
 const pageTitle = "JS Single Page Application Router";
 // create an object that maps the url to the template, title, and description
 const routes = {
@@ -72,3 +71,18 @@ const locationHandler = async () => {
 window.addEventListener("hashchange", locationHandler);
 // call the urlLocationHandler to load the page
 locationHandler();
+
+
+const slider = document.querySelector('.img-container')
+const sliderNavigation = document.querySelectorAll('.miniImage')
+
+sliderNavigation.forEach( ( cadaMiniImage , i )=> {
+	sliderNavigation[i].addEventListener('click',()=>{
+
+		let posicion = i
+		let operation = posicion * -25
+
+		slider.style.transform = `translateX(${ operation }%)`
+
+	})
+} )
