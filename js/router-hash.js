@@ -65,12 +65,13 @@ const locationHandler = async () => {
 	// set the description of the document to the description of the route
 	document
 		.querySelector('meta[name="description"]')
-		.setAttribute("main-page", route.description);
+		// .setAttribute("main-page", route.description);
 };
 // create a function that watches the hash and calls the urlLocationHandler
 window.addEventListener("hashchange", locationHandler);
 // call the urlLocationHandler to load the page
 locationHandler();
+
 
 
 const slider = document.querySelector('.img-container')
@@ -84,5 +85,10 @@ sliderNavigation.forEach( ( cadaMiniImage , i )=> {
 
 		slider.style.transform = `translateX(${ operation }%)`
 
+		sliderNavigation.forEach( ( cadaMiniImage , index )=>{
+			sliderNavigation[i].classList.remove('ativo')
+		})
+		punto[i].classList.add('activo')
+
 	})
-} )
+})

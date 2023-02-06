@@ -144,7 +144,6 @@
     align-items: center;
     transition: all 0.4s ease;
     padding: 0;
-    transition: all 0.5s ease;
     transform: translateX(0%);
     /* background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.4 );
@@ -222,7 +221,7 @@
     block-size: 100%;
     border-radius: .5rem;
     vertical-align: middle;
-    /* pointer-events: none; */
+    pointer-events: none;
 }
 .miniImage.active{
     border: 2px solid #ff8906;
