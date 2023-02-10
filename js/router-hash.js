@@ -1,4 +1,4 @@
-const pageTitle = "JS Single Page Application Router";
+const pageTitle = "Car Dealership";
 // create an object that maps the url to the template, title, and description
 const routes = {
 	404: {
@@ -63,9 +63,9 @@ const locationHandler = async () => {
 	// set the title of the document to the title of the route
 	document.title = route.title;
 	// set the description of the document to the description of the route
-	document
-		.querySelector('meta[name="description"]')
-		.setAttribute("main-page", route.description);
+	// document
+	// 	.querySelector('meta[name="description"]')
+	// 	.setAttribute("main-page", route.description);
 };
 // create a function that watches the hash and calls the urlLocationHandler
 window.addEventListener("hashchange", locationHandler);
