@@ -73,10 +73,9 @@ window.addEventListener("hashchange", locationHandler);
 locationHandler();
 
 
-document.addEventListener("DOMContentLoaded", () => {
-(() => {
-	document.querySelector('.slider-container').innerHTML = "test";
-});
+
+// Script del slider
+
 const slider = document.querySelector('.img-container')
 const sliderNavigation = document.querySelectorAll('.miniImage')
 
@@ -95,26 +94,3 @@ sliderNavigation.forEach( ( cadaMiniImage , i )=> {
 
 	})
 })
-});
-
-
-
-
-// const slider = document.querySelector('.img-container')
-// const sliderNavigation = document.querySelectorAll('.miniImage')
-
-// sliderNavigation.forEach( ( cadaMiniImage , i )=> {
-// 	sliderNavigation[i].addEventListener('click',()=>{
-
-// 		let posicion = i
-// 		let operation = posicion * -25
-
-// 		slider.style.transform = `translateX(${ operation }%)`
-
-// 		sliderNavigation.forEach( ( cadaMiniImage , i )=>{
-// 			sliderNavigation[i].classList.remove('active')
-// 		})
-// 		sliderNavigation[i].classList.add('active')
-
-// 	})
-// })
