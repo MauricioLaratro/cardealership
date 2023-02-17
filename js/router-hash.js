@@ -66,16 +66,9 @@ const locationHandler = async () => {
 	// document
 	// 	.querySelector('meta[name="description"]')
 	// 	.setAttribute("main-page", route.description);
-};
-// create a function that watches the hash and calls the urlLocationHandler
-window.addEventListener("hashchange", locationHandler);
-// call the urlLocationHandler to load the page
-locationHandler();
 
-
-
-// Script del slider
-
+	// Script del slider
+	
 	const slider = document.querySelector('.img-container')
 	const sliderNavigation = document.querySelectorAll('.miniImage')
 	
@@ -93,3 +86,9 @@ locationHandler();
 			sliderNavigation[i].classList.add('active')
 	
 		})
+	})
+};
+// create a function that watches the hash and calls the urlLocationHandler
+window.addEventListener("hashchange", locationHandler);
+// call the urlLocationHandler to load the page
+locationHandler();
