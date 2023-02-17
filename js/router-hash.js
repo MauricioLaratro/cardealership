@@ -66,6 +66,27 @@ const locationHandler = async () => {
 	// document
 	// 	.querySelector('meta[name="description"]')
 	// 	.setAttribute("main-page", route.description);
+
+	// Script del slider
+	
+	const slider = document.querySelector('.img-container')
+	const sliderNavigation = document.querySelectorAll('.miniImage')
+	
+	sliderNavigation.forEach( ( cadaMiniImage , i )=> {
+		sliderNavigation[i].addEventListener('click',()=>{
+	
+			let posicion = i
+			let operation = posicion * -25
+	
+			slider.style.transform = `translateX(${ operation }%)`
+	
+			sliderNavigation.forEach( ( cadaMiniImage , i )=>{
+				sliderNavigation[i].classList.remove('active')
+			})
+			sliderNavigation[i].classList.add('active')
+	
+		})
+	})
 };
 // create a function that watches the hash and calls the urlLocationHandler
 window.addEventListener("hashchange", locationHandler);
@@ -73,24 +94,3 @@ window.addEventListener("hashchange", locationHandler);
 locationHandler();
 
 
-
-// Script del slider
-
-const slider = document.querySelector('.img-container')
-const sliderNavigation = document.querySelectorAll('.miniImage')
-
-sliderNavigation.forEach( ( cadaMiniImage , i )=> {
-	sliderNavigation[i].addEventListener('click',()=>{
-
-		let posicion = i
-		let operation = posicion * -25
-
-		slider.style.transform = `translateX(${ operation }%)`
-
-		sliderNavigation.forEach( ( cadaMiniImage , i )=>{
-			sliderNavigation[i].classList.remove('active')
-		})
-		sliderNavigation[i].classList.add('active')
-
-	})
-})
