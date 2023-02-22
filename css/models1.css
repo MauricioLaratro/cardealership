@@ -142,24 +142,17 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    transition: all 0.4s ease;
+    transition: all 0.5s ease;
     padding: 0;
     transform: translateX(0%);
-    /* background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.4 );
-    backdrop-filter: blur( 8px );
-    -webkit-backdrop-filter: blur( 8px );
-    border-radius: .5rem;
-    border: 2px solid #858C94; */
-    
-    /* border: 10px solid green; */
     block-size: 100%;
 }
 
 
 .img-container .slide{
     inline-size: calc(100% / 4);
-    block-size: auto;
+    block-size: 100%;
+    /* block-size: auto; */
     max-block-size: 100%;
     object-fit: cover;
     vertical-align: middle;
@@ -168,16 +161,14 @@
     border-radius: .5rem;
     box-sizing: border-box;
     margin: 0;
-
-    /* border: 1px solid red; */
 }
 
 .slider-navigation{
     display: flex;
+    justify-content: center;
     margin: 0;
     padding: 0;
     gap: .5rem;
-    text-align: center;
     inline-size: 100%;
     overflow-x: auto;
     overflow-y: visible;
@@ -187,8 +178,9 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    block-size: 100%;
-    inline-size: 100%;
+    block-size: auto;
+    inline-size: 150px;
+    /* inline-size: 100%; */
 }
 
 .slider-navigation::-webkit-scrollbar{
@@ -214,7 +206,13 @@
     border-radius: .5rem;
     border: 2px solid #858C94;
     margin-block-end: .5rem;
+    cursor: pointer;
 }
+
+.miniImage:hover{
+    border: 2px solid #ff8906;
+}
+
 .miniImage img{
     object-fit: contain;
     inline-size: 100%;
