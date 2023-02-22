@@ -72,8 +72,10 @@ const locationHandler = async () => {
 	// 	.querySelector('meta[name="description"]')
 	// 	.setAttribute("main-page", route.description);
 
-	// Script del slider
+
 	
+	// Script del slider
+
 	const slider = document.querySelector('.img-container')
 	const sliderNavigation = document.querySelectorAll('.miniImage')
 	
@@ -91,8 +93,37 @@ const locationHandler = async () => {
 			sliderNavigation[i].classList.add('active')
 	
 		})
-	})
+	});
+
+
+
+	// script para dar background al link del header en el que estes posicionado
+	const headerLinks = document.querySelectorAll('.header-link')
+
+	headerLinks.forEach( ( cadaLinkHeader , i )=> {
+		headerLinks[i].addEventListener('click',()=>{
+
+			headerLinks.forEach( ( cadaLinkHeader , i )=>{
+				headerLinks[i].classList.remove('here')
+			})
+			headerLinks[i].classList.add('here')
+
+		})
+	
+	});
+
+	// quitamos el background seleccionado de home cuando estamos en una page diferente a esta
+	const homeLink = document.getElementById('homeLink')
+		if (location != "/"){
+			homeLink.classList.remove('here')
+		}
+
 };
+
+
+
+
+
 // create a function that watches the hash and calls the urlLocationHandler
 window.addEventListener("hashchange", locationHandler);
 // call the urlLocationHandler to load the page
