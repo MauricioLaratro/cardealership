@@ -53,6 +53,12 @@ const routes = {
 
 // create a function that watches the url and calls the urlLocationHandler
 const locationHandler = async () => {
+
+	// script para que al cambiar de page, el view se vaya hasta el top
+	window.scroll({
+		top: 0,
+	});	
+
 	// get the url path, replace hash with empty string
 	var location = window.location.hash.replace("#", "");
 	// if the path length is 0, set it to primary page route
@@ -114,9 +120,10 @@ const locationHandler = async () => {
 
 	// quitamos el background seleccionado de home cuando estamos en una page diferente a esta
 	const homeLink = document.getElementById('homeLink')
-		if (location != "/"){
-			homeLink.classList.remove('here')
-		}
+
+	if (location != "/"){
+		homeLink.classList.remove('here')
+	};
 
 };
 
