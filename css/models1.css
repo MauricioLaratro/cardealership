@@ -58,6 +58,7 @@
     gap: 1.5rem;
     inline-size: 100%;
     max-block-size: 30vh;
+    min-block-size: 243px;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -118,6 +119,7 @@
     padding: 1.5rem;
     inline-size: 100%;
     block-size: 75vh;
+    min-block-size: 610px;
     box-sizing: border-box;
 }
 
@@ -130,6 +132,7 @@
     padding: 0;
     inline-size: 100%;
     block-size: 80%;
+    min-block-size: 422px;
     overflow: hidden;
     background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.4 );
@@ -176,6 +179,7 @@
     inline-size: 100%;
     overflow-x: auto;
     overflow-y: visible;
+    min-block-size: 99px;
 }
 
 .slider-navigation li{
@@ -263,7 +267,3 @@
 .models-contact .location .map-container .map{
     max-inline-size: 100%;
 }
-
-background: #141E30;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */

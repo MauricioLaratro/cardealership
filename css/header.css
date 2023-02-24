@@ -1,5 +1,7 @@
 .header{
     display: flex;
+    /* flex: 1; */
+    min-inline-size: 100%;
     position: sticky;
     inset-block-start: 0;
     align-content: center;
@@ -8,18 +10,13 @@
     backdrop-filter: blur( 8px );
     -webkit-backdrop-filter: blur( 8px );
     padding-block: 1rem;
-    /* min-inline-size: 51.25rem; */
     z-index: 3;
-
-    /* max-inline-size: 100vw;
-    inline-size: 100%; */
 }
 
 .header-content{
     display: flex;
     justify-content: space-between;
     padding: 0;
-    padding-inline: .5rem;
 }
 
 .header-navigation ul{

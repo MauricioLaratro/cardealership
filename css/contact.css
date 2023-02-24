@@ -17,7 +17,8 @@
     backdrop-filter: blur( 8px );
     -webkit-backdrop-filter: blur( 8px );
     border-radius: .5rem;
-    padding: 2rem;
+    padding-block: 2rem;
+    padding-inline: 2rem;
     border: 2px solid #858C94;
 }
 
@@ -41,6 +42,7 @@
     border-radius: .5rem;
     padding-inline: 1rem;
     padding-block: 1rem;
+    margin: 0;
     display: flex;
     gap: 3rem;
     flex-direction: column;

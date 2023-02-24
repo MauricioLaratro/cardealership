@@ -1,0 +1,43 @@
+/* Media querys para laptop grande */
+
+@media screen and (max-width: 1440px){
+    :root{
+        --gridTemplateColumns: auto 1fr auto;
+    }
+
+    html {
+        inline-size: 100vw;
+    }
+
+    .inset-wrapper [class*="content"]{
+        max-inline-size: 100vw;
+        overflow: hidden;
+    }
+    
+    .slider-container{
+        block-size: 80vh;
+        min-block-size: 650px;
+    }
+
+    .logo{
+        padding-inline-start: 1rem;
+    }
+
+
+}
+
+
+@media screen and (max-width: 1024px){
+    .slider-container{
+        block-size: 80vh;
+        min-block-size: 650px;
+    }
+
+    .contact-content{
+        padding-inline: 1rem;
+    }
+
+    .card:nth-of-type(3){
+        display: none;
+    }
+}

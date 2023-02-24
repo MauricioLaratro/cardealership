@@ -17,9 +17,3 @@
 .wrapper section{
     grid-column: 1 / -1;
 }
-
-@media screen and (max-width: 1400px){
-    :root{
-        --gridTemplateColumns: auto 1fr auto;
-    }
-}
