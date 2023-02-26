@@ -60,6 +60,7 @@
 .contact-description{
     display: flex;
     grid-column: 1 / -1;
+    justify-content: center;
     gap: 2rem;
     background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.4 );
@@ -84,4 +85,6 @@
 .contact-description img{
     vertical-align: middle;
     margin-inline-end: .5rem;
+    max-block-size: 25px;
+    max-inline-size: 26px;
 }

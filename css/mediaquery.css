@@ -23,7 +23,14 @@
         padding-inline-start: 1rem;
     }
 
+    .main-title{
+        border-radius: 0;
+        justify-content: center;
+    }
 
+    .mainServices-section{
+        border-radius: 0;
+    }
 }
 
 
@@ -37,7 +44,32 @@
         padding-inline: 1rem;
     }
 
-    .card:nth-of-type(3){
+    .card-agroup .card:nth-of-type(3){
         display: none;
+    }
+
+    .vehicles-models{
+    grid-template-columns: 1fr 1fr;
+    }
+
+    .models-info{
+
+    }
+
+    .contact-description h4{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-inline-end: .5rem;
+        margin: 0;
+
+    }
+    .contact-description a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-description img{
+        margin-inline-end: .5rem;
     }
 }

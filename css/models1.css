@@ -57,8 +57,6 @@
     padding: 1.5rem;
     gap: 1.5rem;
     inline-size: 100%;
-    max-block-size: 30vh;
-    min-block-size: 243px;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -66,6 +64,9 @@
 .models-info img{
     border-inline-end: 2px solid #858C94;   
     padding-inline-end: .5rem;
+    max-inline-size: 37px;
+    max-block-size: 49px;
+    box-sizing: border-box;
 }
 
 .info-title{
