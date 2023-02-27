@@ -12,6 +12,7 @@
     flex-direction: column;
     justify-self: center;
     inline-size: fit-content;
+    min-inline-size: 90%;
     max-inline-size: 100vw;
     box-sizing: border-box;
     background: rgba( 255, 255, 255, 0.25 );

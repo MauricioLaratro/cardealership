@@ -34,6 +34,8 @@
 }
 
 
+/* Media querys para laptop pequeña */
+
 @media screen and (max-width: 1024px){
     .slider-container{
         block-size: 80vh;
@@ -52,10 +54,6 @@
     grid-template-columns: 1fr 1fr;
     }
 
-    .models-info{
-
-    }
-
     .contact-description h4{
         display: flex;
         flex-direction: column;
@@ -71,5 +69,40 @@
     }
     .contact-description img{
         margin-inline-end: .5rem;
+    }
+}
+
+
+/* Media querys para tablets */
+@media screen and (max-width: 768px){
+    .vehicles-models{
+    grid-template-columns: 1fr;
+    }
+
+    .vehicles-models{
+        justify-items: center;
+        }
+    .vehicles-models .card{
+        inline-size: fit-content;
+        }
+    .card img{
+        inline-size: 370px;
+    }
+
+    .contact-content{
+        grid-template-columns: 1fr auto;
+        grid-template-rows: auto 1fr;
+    }
+    .contact-description{
+        flex-direction: column;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        block-size: 100%;
+        box-sizing: border-box;
+        justify-content: space-between;
+    }
+    .location{
+        grid-row: 2 / -1;
+        grid-column: 1 / -1;
     }
 }
