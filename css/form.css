@@ -79,10 +79,10 @@
 }
 
 
-/* #sendMail{
-    opacity: 1;
-    align-self: center;
-} */
+.form [required]:valid{
+    outline-color: var(--buttonColor);
+}
+
 
 @media screen and (min-width: 768px) {
     .form{
@@ -94,4 +94,8 @@
         align-self: stretch;
         text-align: center;
     }
+}
+
+.sent {
+    border: var(--buttonColor);
 }

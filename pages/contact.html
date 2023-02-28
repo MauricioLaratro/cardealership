@@ -15,22 +15,15 @@
             <div class="contact-content">
                 <form class="form" id="form" action="https://formsubmit.co/mauriciolaratro@gmail.com" method="POST">
                     <h2 class="title"><strong>let's talk</strong></h2>
-                    <h4 class="subtitle">Do not hesitate to contact us for more information about the vehicle you are interested in.</h4>        
-                    <label for="name">
-                        <h4>Name</h4>
-                    </label>
-                        <input required name="name" id="name" type="text" placeholder="Juan Lucas López">
-                    <label for="email">
-                        <h4>Email</h4>
-                    </label>
-                        <input required name="email" id="email" type="email" placeholder="Email">
-                    <label for="message">
-                        <h4>Message</h4>
-                    </label>
-                        <textarea required name="message" placeholder="Message" id="message" cols="30" rows="10"></textarea>
-                        <button class="form-button" type="submit">Send Message</button>
-                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/#thanks">
-                        <input type="hidden" name="_captcha" value="false">
+                    <h4 class="subtitle">Do not hesitate to contact us for more information.</h4>        
+                    <input required name="name" id="name" type="text" title="Name allows only letters and spaces" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" placeholder="Your full name">
+                    <input required name="email" id="email" type="email" title="incorrect email" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" placeholder="Your Email">
+                    <input type="text" name="_subject" required placeholder="Subject Matter" title="Subject can only contain up to 40 characters." pattern="^.{1,40}$">
+                    <textarea required name="message" placeholder="Message" id="message" cols="30" rows="10"></textarea>
+                    <button class="form-button" type="submit">Send Message</button>
+                    <!-- REPLACE VALUE TO URL OF UR THANKSGIVING -->
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/#thanks">
+                    <input type="hidden" name="_captcha" value="false">
                 </form>
     
                 <div class="location">

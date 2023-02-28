@@ -79,9 +79,7 @@ const locationHandler = async () => {
 	// 	.setAttribute("main-page", route.description);
 
 
-	
 	// Script del slider
-
 const slider = document.querySelector('.img-container')
 const sliderNavigation = document.querySelectorAll('.miniImage')
 	
@@ -135,3 +133,5 @@ sliderNavigation.forEach( ( cadaMiniImage , i )=> {
 window.addEventListener("hashchange", locationHandler);
 // call the urlLocationHandler to load the page
 locationHandler();
+
+
