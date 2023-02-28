@@ -31,16 +31,21 @@
     .mainServices-section{
         border-radius: 0;
     }
+
+    .slider{
+        max-inline-size: 952px;
+        align-self: center;
+    }
 }
 
 
 /* Media querys para laptop pequeña */
 
 @media screen and (max-width: 1024px){
-    .slider-container{
+    /* .slider-container{
         block-size: 80vh;
         min-block-size: 650px;
-    }
+    } */
 
     .contact-content{
         padding-inline: 1rem;
@@ -104,5 +109,35 @@
     .location{
         grid-row: 2 / -1;
         grid-column: 1 / -1;
+    }
+
+    .slider-container{
+        justify-content: center;
+        block-size: auto;
+        min-block-size: 0px;
+    }
+    .slider{
+        block-size: fit-content;
+        min-block-size: 0px;
+    }
+    .img-container{
+        block-size: fit-content;
+    }
+
+    .models-info{
+        grid-template-columns: 4;
+        grid-template-rows: 5;
+    }
+    .info-details{
+        grid-column: 1 / -1;
+        grid-row: 2 / -1;
+    }
+    .info-title{
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+    }
+
+    .models-contact .location{
+        display: none;
     }
 }
