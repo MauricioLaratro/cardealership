@@ -47,6 +47,10 @@
     /* gap: 1rem; */
     padding-block-start: 3rem;
     animation: slide 16s infinite ease-in-out;
+    -webkit-animation: slide 16s infinite ease-in-out;
+    -moz-animation: slide 16s infinite ease-in-out;
+    -o-animation: slide 16s infinite ease-in-out;
+
     /* padding-inline-start: .5rem; */
 }
 .card-container:hover{

@@ -182,12 +182,43 @@
         box-sizing: content-box;
     }
 
-    /* .main-services{
-        padding-inline: .25rem;
-        box-sizing: border-box;
+    .card{
+        transform: translateY(-45px);
+        z-index: 1;
+        background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.4 );
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border-radius: .5rem;
+    }
+
+    .main-carSlider{
+        overflow-x: scroll;
+    }
+    .card-container{
+        animation: none;
+        -webkit-animation: none;
+        -moz-animation: none;
+        -o-animation: none;
+    }
+
+    .car-description{
+        opacity: 1;
+    }
+    .card a{
+        border-block-end: 2px solid gray;
+    }
+
+    /* .hero-content h2, .hero-content h1{
+        opacity: 1;
     } */
-    /* .mainServices-section img{
-        inline-size: 200px;
-        block-size: 150px;
-    } */
+    .hero-content br{
+        display: initial;
+    }
+
+    .mainServices-section img{
+        -webkit-filter: none; /* Webkit */
+        filter: none; /* IE6-9 */
+        filter: none; /* W3C */
+    }
 }

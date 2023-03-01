@@ -39,6 +39,10 @@
     opacity: 0;
     transition: 1s;
     user-select: none;
+    text-align: center;
+}
+.hero-content br{
+    display: none;
 }
 
 .hero-content h2{
@@ -60,11 +64,11 @@
     text-decoration: underline;
 }
 
-.hero-content:hover>h1{
+.hero-content:hover>h1, .hero-content:active>h1{
     opacity: 1;
     transition: 1s;
 }
-.hero-content:hover>h2{
+.hero-content:hover>h2, .hero-content:active>h2{
     opacity: 1;
     transition: 1s;
     transition-delay: 1s;
