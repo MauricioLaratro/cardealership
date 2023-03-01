@@ -5,9 +5,9 @@
         --gridTemplateColumns: auto 1fr auto;
     }
 
-    html {
+    /* html {
         inline-size: 100vw;
-    }
+    } */
 
     .inset-wrapper [class*="content"]{
         max-inline-size: 100vw;
@@ -140,4 +140,54 @@
     .models-contact .location{
         display: none;
     }
+}
+
+
+@media screen and (max-width: 425px){
+    .hidden-in-mobile{
+        display: none;
+    }
+
+    .header{
+        position: relative;
+    }
+    .header-content{
+        flex-direction: column;
+        align-items: center;
+        justify-content: stretch;
+    }
+    .header-navigation ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-agroup .card:nth-of-type(n + 2){
+        display: none;
+    }
+    .card-agroup .card img{
+        inline-size: 310px;
+        object-fit: contain;
+    }
+
+    .main-title h2{
+        font: var(--headLine3);
+    }
+
+    .main-services{
+        flex-direction: column;
+        align-items: stretch;
+        padding-inline: .25rem;
+        box-sizing: content-box;
+    }
+
+    /* .main-services{
+        padding-inline: .25rem;
+        box-sizing: border-box;
+    } */
+    /* .mainServices-section img{
+        inline-size: 200px;
+        block-size: 150px;
+    } */
 }

@@ -150,7 +150,6 @@
     flex: 1;
     flex-direction: column;
     justify-content: center;
-    /* border: 2px solid black; */
     border-radius: .5rem;
     transition: .3s;
     overflow: hidden;

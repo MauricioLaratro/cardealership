@@ -37,3 +37,7 @@ body h4{
     font: var(--headLine4);
     margin: 0;
 }
+
+html {
+    inline-size: 100vw;
+}
