@@ -80,24 +80,24 @@ const locationHandler = async () => {
 
 
 	// Script del slider
-const slider = document.querySelector('.img-container')
-const sliderNavigation = document.querySelectorAll('.miniImage')
+	const slider = document.querySelector('.img-container')
+	const sliderNavigation = document.querySelectorAll('.miniImage')
 	
-sliderNavigation.forEach( ( cadaMiniImage , i )=> {
-	sliderNavigation[i].addEventListener('click',()=>{
+	sliderNavigation.forEach( ( cadaMiniImage , i )=> {
+		sliderNavigation[i].addEventListener('click',()=>{
 	
-		let posicion = i
-		let operation = posicion * -25
+			let posicion = i
+			let operation = posicion * -25
 	
-		slider.style.transform = `translateX(${ operation }%)`
+			slider.style.transform = `translateX(${ operation }%)`
 	
-		sliderNavigation.forEach( ( cadaMiniImage , i )=>{
-			sliderNavigation[i].classList.remove('active')
+			sliderNavigation.forEach( ( cadaMiniImage , i )=>{
+				sliderNavigation[i].classList.remove('active')
+			})
+			sliderNavigation[i].classList.add('active')
+	
 		})
-		sliderNavigation[i].classList.add('active')
-	
-	})
-});
+	});
 
 
 
@@ -133,5 +133,3 @@ sliderNavigation.forEach( ( cadaMiniImage , i )=> {
 window.addEventListener("hashchange", locationHandler);
 // call the urlLocationHandler to load the page
 locationHandler();
-
-
