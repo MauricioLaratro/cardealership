@@ -80,8 +80,18 @@
 
 /* Media querys para tablets */
 @media screen and (max-width: 768px){
+    
+    .hero-content h1{
+        opacity: 1;
+        transition: 2s;
+    }
+    .hero-content h2{
+        opacity: 1;
+        transition: 2s;
+        transition-delay: 1s;
+    }
     .vehicles-models{
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
 
     .vehicles-models{
