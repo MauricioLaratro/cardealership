@@ -4,6 +4,8 @@
     background-size: cover;
     background-position: center;
     min-block-size: 100vh;
+
+    max-inline-size: 100vw;
 }
 
 .company-content{
@@ -17,9 +19,14 @@
     backdrop-filter: blur( 8px );
     -webkit-backdrop-filter: blur( 8px );
     border-radius: .5rem;
-    padding: 2rem;
+    padding-inline: 1rem;
+    padding-block: 1rem;
     border: 2px solid #858C94;
+    margin-block: 3rem;
+    margin-inline: 3rem;
 
+    max-inline-size: 100%;
+    box-sizing: border-box;
 }
 
 .company-description{
@@ -70,6 +77,8 @@
 
 .brands-names{
     padding-inline: .5rem;
+    inline-size: fit-content;
+    align-self: center;
 }
 
 .brands-names h3{
@@ -96,6 +105,9 @@
     border: 2px solid #858C94;
     border-radius: .5rem;
     overflow: hidden;
+
+    max-inline-size: 100%;
+    box-sizing: border-box;
 }
 
 .company-image img{
@@ -103,5 +115,4 @@
     max-inline-size: 100%;
     aspect-ratio: 16 / 9;
     vertical-align: middle;
-
 }

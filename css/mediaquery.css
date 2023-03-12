@@ -36,6 +36,11 @@
         max-inline-size: 952px;
         align-self: center;
     }
+
+
+    .contact-content{
+        margin-inline: 3rem;
+    }
 }
 
 
@@ -49,6 +54,8 @@
 
     .contact-content{
         padding-inline: 1rem;
+
+        margin-inline: 0rem;
     }
 
     .card-agroup .card:nth-of-type(3){
@@ -138,10 +145,10 @@
         grid-template-columns: 4;
         grid-template-rows: 5;
     }
-    .info-details{
+    /* .info-details{
         grid-column: 1 / -1;
         grid-row: 2 / -1;
-    }
+    } */
     .info-title{
         grid-column: 1 / 4;
         grid-row: 1 / 2;
@@ -154,6 +161,13 @@
 
 
 @media screen and (max-width: 480px){
+    
+    body h1{
+        font: var(--headLine2);
+        font-weight: bold;
+    }
+
+
     .hidden-in-mobile{
         display: none;
     }
@@ -296,10 +310,66 @@
     }
     .map{
         max-inline-size: 100%;
+        /* block-size: auto; */
     }
     .contact-description{
         flex-direction: column;
         grid-column: 1 / 2;
         grid-row: 3 / 4;
+    }
+
+
+    .company-content{
+        padding-inline: .5rem;
+        box-sizing: border-box;
+    }
+    .company-info{
+        flex-direction: column;
+        align-items: center;
+    }
+    .company-brands{
+        align-self: stretch;
+        text-align: center;
+    }
+
+
+
+    .models-content{
+        padding: 1rem;
+        gap: 2rem;
+    }
+    .models-content .info-container{
+        padding: 0;
+    }
+    .slider-container{
+        block-size: fit-content;
+        box-sizing: border-box;
+        padding: 1rem;
+    }
+    .slider-navigation{
+        /* min-block-size: 60px; */
+        min-block-size: fit-content;
+    }
+    .info-title{
+        grid-column: 1 / 3;
+    }
+    .models-info{
+        grid-template-rows: 7;
+    }
+    .models-contact{
+        margin-block-start: 0;
+    }
+    .models-contact .form{
+        max-inline-size: 100%;
+        padding-inline: .5rem;
+
+    }
+}
+
+
+
+@media screen and (max-width: 375px){
+    .info-title{
+        grid-column: 1 / 2;
     }
 }
