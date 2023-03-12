@@ -17,8 +17,15 @@
     display: flex;
     justify-content: space-between;
     padding: 0;
+
+    box-sizing: border-box;
 }
 
+.header-navigation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .header-navigation ul{
     text-align: center;
     list-style: none;
@@ -63,4 +70,21 @@
 .header .logo img{
     inline-size: 100%;
     vertical-align: middle;
+}
+
+
+
+
+.fa-solid{
+    color: var(--buttonColor);
+}
+.check-button{
+    font-size: 20px;
+    float: middle;
+    /* margin-inline-end: 1rem; */
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
 }

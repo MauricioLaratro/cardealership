@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;0,900;1,300;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
-    <title>Car Leadership</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <title>Car Leadership</title>
 </head>
 <body>
     <header class="header inset-wrapper">
@@ -17,7 +17,13 @@
                 <a href="/"><img src="./image/logo.png" alt="logo"></a>
             </div>
             <nav class="header-navigation">
-                <ul>
+
+                <input type="checkbox" id="check">
+                <label for="check" class="check-button">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+
+                <ul class="ul">
                     <a href="/" class="header-link here" id="homeLink">Home</a>
                     <a href="#vehicles" class="header-link">Vehicles</a>
                     <a href="#contact" class="header-link">Contact</a>

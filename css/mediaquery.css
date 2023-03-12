@@ -157,20 +157,7 @@
     .models-contact .location{
         display: none;
     }
-}
 
-
-@media screen and (max-width: 480px){
-    
-    body h1{
-        font: var(--headLine2);
-        font-weight: bold;
-    }
-
-
-    .hidden-in-mobile{
-        display: none;
-    }
 
     .header{
         position: relative;
@@ -187,6 +174,33 @@
         justify-content: center;
     }
 
+
+    .check-button{
+        display: block;
+    }
+    .header-navigation .ul{
+        display: none;
+        transition: all .3s;
+    }
+    #check:checked ~ .ul{
+        display: flex;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+    
+    body h1{
+        font: var(--headLine2);
+        font-weight: bold;
+    }
+
+
+    .hidden-in-mobile{
+        display: none;
+    }
+
+    
     .card-agroup .card:nth-of-type(n + 2){
         display: none;
     }
