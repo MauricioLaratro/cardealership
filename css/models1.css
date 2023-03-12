@@ -119,7 +119,8 @@
     border: 2px solid #858C94;
     padding: 1.5rem;
     inline-size: 100%;
-    block-size: 75vh;
+    /* block-size: 80vh; */
+    max-block-size: 650px;
     min-block-size: 610px;
     box-sizing: border-box;
 }
@@ -132,7 +133,7 @@
     margin: 0;
     padding: 0;
     inline-size: 100%;
-    block-size: 80%;
+    max-block-size: 80%;
     min-block-size: 422px;
     overflow: hidden;
     background: rgba( 255, 255, 255, 0.25 );
