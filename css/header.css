@@ -11,6 +11,8 @@
     -webkit-backdrop-filter: blur( 8px );
     padding-block: 1rem;
     z-index: 3;
+
+
 }
 
 .header-content{
@@ -18,7 +20,7 @@
     justify-content: space-between;
     padding: 0;
 
-    box-sizing: border-box;
+    
 }
 
 .header-navigation{

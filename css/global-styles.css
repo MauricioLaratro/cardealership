@@ -16,6 +16,8 @@
 
 body{
     margin: 0;
+
+    /* overflow-x: hidden; */
 }
 
 body h1{
@@ -39,5 +41,5 @@ body h4{
 }
 
 html {
-    inline-size: 100vw;
+    max-inline-size: 100vw;
 }

@@ -185,6 +185,13 @@
     #check:checked ~ .ul{
         display: flex;
     }
+
+
+    .footer-content{
+        flex-direction: column;
+        align-items: center;
+        padding-inline: .5rem;
+    }
 }
 
 

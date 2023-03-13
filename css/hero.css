@@ -8,7 +8,9 @@
     /* border: 5px solid red; */
     /* min-inline-size: 820px; */
     max-block-size: 37.5rem;
-
+    
+    /* max-inline-size: 100vw;
+    box-sizing: border-box; */
 }
 
 .hero-content{
@@ -24,6 +26,8 @@
     color: white;
     gap: 1rem;
     margin-block: 2rem;
+
+    /* max-inline-size: 100%; */
 }
 .hero-content h1{
     background: rgba( 128, 128, 128, 0.4 );

@@ -1,14 +1,19 @@
 .footer{
     background: black;
     grid-column: 1 / -1;
+
+    /* max-inline-size: 100vw;
+    box-sizing: border-box; */
 }
 
 .footer-content{
     display: flex;
-    justify-content: space-between;
     margin-block-start: 5rem;
     margin-block-end: 1rem;
     gap: 2rem;
+    /* justify-content: space-between; */
+    
+    justify-content: center;
 }
 
 .footer-section{
@@ -19,7 +24,6 @@
     flex-direction: column;
     gap: 2rem;
     align-items: flex-start;
-
 }
 
 .footer-title{
