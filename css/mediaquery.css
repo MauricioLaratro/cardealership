@@ -41,6 +41,12 @@
     .contact-content{
         margin-inline: 3rem;
     }
+
+
+    .financing{
+        box-sizing: border-box;
+        padding-inline: 5rem;
+    }
 }
 
 
@@ -191,6 +197,11 @@
         flex-direction: column;
         align-items: center;
         padding-inline: .5rem;
+    }
+
+    
+    .financing{
+        padding-inline: 1rem;
     }
 }
 
@@ -384,6 +395,13 @@
         max-inline-size: 100%;
         padding-inline: .5rem;
 
+    }
+
+
+    .financing-content{
+        flex-direction: column;
+        padding-inline: .5rem;
+        align-items: center;
     }
 }
 
