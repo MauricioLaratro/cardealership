@@ -101,6 +101,45 @@ const locationHandler = async () => {
 
 
 
+	// Script para enviar el form
+	function contactForm(){
+		const $form = document.querySelector(".form");
+
+		document.addEventListener("submit", (event) => {
+			event.preventDefault();
+
+			const $loader = document.querySelector(".loader");
+			const $response = document.querySelector(".form-response");
+
+			$loader.classList.remove("none");
+
+			fetch("https://formsubmit.co/ajax/mauriciolaratro@gmail.com", {
+				method: "POST",
+				body: new FormData(event.target)
+			})
+			 .then(res => res.ok ? res.json(): Promise.reject(res))
+			 .then(json => {
+				console.log(json);
+				$loader.classList.add("none");
+				$response.classList.remove("none");
+				$response.innerHTML = `<h2>${json.message}</h2>`;
+				$form.reset();
+			 })
+			 .catch(err => {
+				console.log(err);
+				let message = err.statusText || "Ocurrio un error al enviar, intenta nuevamente.";
+				$response.innerHTML = `<h2>Error ${err.status}: ${message}</h2>`;
+			 })
+			 .finally(() => setTimeout(() => {
+				$response.classList.add("none");
+				$response.innerHTML = "";
+			 }, 3000))
+		})
+	}
+	contactForm();
+
+
+
 	// script para dar background al link del header en el que estes posicionado
 	const headerLinks = document.querySelectorAll('.header-link')
 

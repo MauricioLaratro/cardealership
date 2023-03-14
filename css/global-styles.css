@@ -43,3 +43,7 @@ body h4{
 html {
     max-inline-size: 100vw;
 }
+
+.none {
+    display: none !important;
+}
