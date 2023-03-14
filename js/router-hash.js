@@ -36,11 +36,6 @@ const routes = {
 		title: "Financing | " + pageTitle,
 		description: "This is the financing page",
 	},
-	thanks: {
-		template: "../pages/thanks.html",
-		title: "thanks | " + pageTitle,
-		description: "This is the financing page",
-	},
 
 
 
