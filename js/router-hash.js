@@ -78,7 +78,7 @@ const locationHandler = async () => {
 	const slider = document.querySelector('.img-container')
 	const sliderNavigation = document.querySelectorAll('.miniImage')
 	
-	sliderNavigation.forEach( ( cadaMiniImage , i )=> {
+	sliderNavigation.forEach( ( miniImages , i )=> {
 		sliderNavigation[i].addEventListener('click',()=>{
 	
 			let posicion = i
@@ -86,7 +86,7 @@ const locationHandler = async () => {
 	
 			slider.style.transform = `translateX(${ operation }%)`
 	
-			sliderNavigation.forEach( ( cadaMiniImage , i )=>{
+			sliderNavigation.forEach( ( miniImages , i )=>{
 				sliderNavigation[i].classList.remove('active')
 			})
 			sliderNavigation[i].classList.add('active')
@@ -138,13 +138,13 @@ const locationHandler = async () => {
 	// script para dar background al link del header en el que estes posicionado
 	const headerLinks = document.querySelectorAll('.header-link')
 
-	headerLinks.forEach( ( cadaLinkHeader , i )=> {
+	headerLinks.forEach( ( linksHeader , i )=> {
 		headerLinks[i].addEventListener('click',()=>{
 
-			headerLinks.forEach( ( cadaLinkHeader , i )=>{
-				headerLinks[i].classList.remove('here')
+			headerLinks.forEach( ( linksHeader , i )=>{
+				headerLinks[i].classList.remove('selected')
 			})
-			headerLinks[i].classList.add('here')
+			headerLinks[i].classList.add('selected')
 
 		})
 	
@@ -154,7 +154,7 @@ const locationHandler = async () => {
 	const homeLink = document.getElementById('homeLink')
 
 	if (location != "/"){
-		homeLink.classList.remove('here')
+		homeLink.classList.remove('selected')
 	};
 
 };

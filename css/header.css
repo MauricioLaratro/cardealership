@@ -58,7 +58,7 @@
     text-decoration: none;
     color: white;
 }
-.here{
+.selected{
     background-color: var(--buttonColor);
 }
 
