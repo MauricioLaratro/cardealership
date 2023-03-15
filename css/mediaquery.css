@@ -94,9 +94,17 @@
 /* Media querys para tablets */
 @media screen and (max-width: 768px){
     
+    .hero{
+        max-block-size: 60vh;
+    }
+    .hero-content{
+        margin-block: 0;
+    }
     .hero-content h1{
         opacity: 1;
         transition: 2s;
+        margin-block-start: .5rem;
+        margin-block-end: .5rem;
     }
     .hero-content h2{
         opacity: 1;
