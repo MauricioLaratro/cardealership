@@ -1,6 +1,7 @@
 @import './global-styles.css';
 @import './header.css';
 @import './wrapper.css';
+@import './404.css';
 @import './hero.css';
 @import './main.css';
 @import './footer.css';
@@ -9,7 +10,6 @@
 @import './company.css';
 @import './financing.css';
 @import './vehicles.css';
-/* @import './models.css'; */
-@import './models1.css';
+@import './models.css';
 @import './loader.css';
 @import './mediaquery.css';
