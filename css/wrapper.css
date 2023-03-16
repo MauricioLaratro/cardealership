@@ -12,9 +12,6 @@
 
 .inset-wrapper [class*="content"]{
     grid-area: content;
-
-
-    /* max-inline-size: 100vw; */
 }
 
 .wrapper section{

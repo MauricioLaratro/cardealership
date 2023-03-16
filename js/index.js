@@ -78,7 +78,7 @@ const locationHandler = async () => {
 	const slider = document.querySelector('.img-container')
 	const sliderNavigation = document.querySelectorAll('.miniImage')
 	
-	sliderNavigation.forEach( ( miniImages , i )=> {
+	sliderNavigation.forEach( ( imagesList , i )=> {
 		sliderNavigation[i].addEventListener('click',()=>{
 	
 			let posicion = i
@@ -86,7 +86,7 @@ const locationHandler = async () => {
 	
 			slider.style.transform = `translateX(${ operation }%)`
 	
-			sliderNavigation.forEach( ( miniImages , i )=>{
+			sliderNavigation.forEach( ( imagesList , i )=>{
 				sliderNavigation[i].classList.remove('active')
 			})
 			sliderNavigation[i].classList.add('active')
@@ -122,7 +122,7 @@ const locationHandler = async () => {
 			 })
 			 .catch(err => {
 				console.log(err);
-				let message = err.statusText || "Ocurrio un error al enviar, intenta nuevamente.";
+				let message = err.statusText || "An error occurred while sending, please try again.";
 				$response.innerHTML = `<h2>Error ${err.status}: ${message}</h2>`;
 			 })
 			 .finally(() => setTimeout(() => {
@@ -138,10 +138,10 @@ const locationHandler = async () => {
 	// script para dar background al link del header en el que estes posicionado
 	const headerLinks = document.querySelectorAll('.header-link')
 
-	headerLinks.forEach( ( linksHeader , i )=> {
+	headerLinks.forEach( ( linksList , i )=> {
 		headerLinks[i].addEventListener('click',()=>{
 
-			headerLinks.forEach( ( linksHeader , i )=>{
+			headerLinks.forEach( ( linksList , i )=>{
 				headerLinks[i].classList.remove('selected')
 			})
 			headerLinks[i].classList.add('selected')

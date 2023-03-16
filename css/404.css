@@ -9,8 +9,6 @@
     block-size: 100%;
     align-items: center;
     justify-content: center;
-    /* color: var(--buttonColor); */
-
     gap: .5rem;
 }
 
@@ -25,17 +23,21 @@
     padding-inline: .5rem;
     transition-duration: .4s;
 }
+
 .backToHome:active{
     transform: scale(.9);
 }
+
 .backToHome a{
     text-decoration: none;
     color: var(--buttonColor);
     transition-duration: .4s;
 }
+
 .backToHome:hover{
     background-color: var(--buttonColor);
 }
+
 .backToHome:hover>a{
     color: white;
 }
@@ -44,21 +46,22 @@
     position: absolute;
     width: 220px;
     height: 220px;
-  }
-  
-  .loader404:before , .loader404:after{
+}
+
+.loader404:before , .loader404:after{
     content: '';
     border-radius: 50%;
     position: absolute;
     inset: 0;
     box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3) inset;
   }
-  .loader404:after {
+
+.loader404:after {
     box-shadow: 0 2px 0 var(--buttonColor) inset;
     animation: rotate404 2s linear infinite;
-  }
-  
-  @keyframes rotate404 {
+}
+
+@keyframes rotate404 {
     0% {  transform: rotate(0)}
     100% { transform: rotate(360deg)}
-  }
+}

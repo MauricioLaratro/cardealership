@@ -1,9 +1,6 @@
 .footer{
     background: black;
     grid-column: 1 / -1;
-
-    /* max-inline-size: 100vw;
-    box-sizing: border-box; */
 }
 
 .footer-content{
@@ -11,8 +8,6 @@
     margin-block-start: 5rem;
     margin-block-end: 1rem;
     gap: 2rem;
-    /* justify-content: space-between; */
-    
     justify-content: center;
 }
 
@@ -38,7 +33,6 @@
 
 .footer-text{
     color: white;
-
 }
 
 .footer-text ul{
@@ -55,7 +49,6 @@
 
 .support-text{
     color: white;
-
 }
 
 .support-text img{

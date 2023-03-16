@@ -10,14 +10,13 @@
     display: flex;
     gap: 5rem;
     justify-content: center;
-
     background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.4 );
     backdrop-filter: blur( 8px );
     -webkit-backdrop-filter: blur( 8px );
     border-radius: .5rem;
     padding: 2rem;
-    border: 2px solid #858C94;
+    border: 2px solid var(--secondaryColor);
     margin-block: 4rem;
 }
 
@@ -38,7 +37,7 @@
     box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.4 );
     backdrop-filter: blur( 8px );
     -webkit-backdrop-filter: blur( 8px );
-    border: 2px solid #858C94;
+    border: 2px solid var(--secondaryColor);
     border-radius: .5rem;
     padding: 1rem;
 

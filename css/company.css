@@ -4,7 +4,6 @@
     background-size: cover;
     background-position: center;
     min-block-size: 100vh;
-
     max-inline-size: 100vw;
 }
 
@@ -21,10 +20,9 @@
     border-radius: .5rem;
     padding-inline: 1rem;
     padding-block: 1rem;
-    border: 2px solid #858C94;
+    border: 2px solid var(--secondaryColor);
     margin-block: 3rem;
     margin-inline: 3rem;
-
     max-inline-size: 100%;
     box-sizing: border-box;
 }
@@ -40,7 +38,6 @@
     flex-direction: column;
     gap: 1rem;
 }
-
 
 .company-info{
     display: flex;
@@ -58,8 +55,7 @@
     flex-shrink: 0;
     align-self: flex-start;
     gap: 1.5rem;
-
-    border: 2px solid #858C94;
+    border: 2px solid var(--secondaryColor);
     background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.4 );
     backdrop-filter: blur( 8px );
@@ -97,15 +93,13 @@
     color: var(--buttonColor);
 }
 
-
 .company-image{
     block-size: fit-content;
     max-inline-size: 40rem;
     min-inline-size: 18.75rem;
-    border: 2px solid #858C94;
+    border: 2px solid var(--secondaryColor);
     border-radius: .5rem;
     overflow: hidden;
-
     max-inline-size: 100%;
     box-sizing: border-box;
 }
