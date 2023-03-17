@@ -14,27 +14,27 @@ const routes = {
 	vehicles: {
 		template: "../pages/vehicles.html",
 		title: "vehicles | " + pageTitle,
-		description: "This is the about page",
+		description: "Here you will find all available vehicles",
 	},
 	vehicles2: {
 		template: "../pages/vehicles2.html",
 		title: "vehicles2 | " + pageTitle,
-		description: "This is the about page",
+		description: "Here you will find all available vehicles",
 	},
 	contact: {
 		template: "../pages/contact.html",
 		title: "Contact Us | " + pageTitle,
-		description: "This is the contact page",
+		description: "From here you will be able to contact us",
 	},
 	company: {
 		template: "../pages/company.html",
 		title: "Company | " + pageTitle,
-		description: "This is the company page",
+		description: "In this page you can know more about us",
 	},
 	financing: {
 		template: "../pages/financing.html",
 		title: "Financing | " + pageTitle,
-		description: "This is the financing page",
+		description: "Here you can learn and request more information about financing.",
 	},
 
 
@@ -42,14 +42,14 @@ const routes = {
 	model1: {
 		template: "../pages/models/model1.html",
 		title: "Model1 | " + pageTitle,
-		description: "This is the model page",
+		description: "Here you will find more information about the vehicle you are looking for.",
 	},
 };
 
 // create a function that watches the url and calls the urlLocationHandler
 const locationHandler = async () => {
 
-	// script para que al cambiar de page, el view se vaya hasta el top
+	// Redirect the viewport to the top, when changing pages
 	window.scroll({
 		top: 0,
 	});	
@@ -69,15 +69,15 @@ const locationHandler = async () => {
 	// set the title of the document to the title of the route
 	document.title = route.title;
 	// set the description of the document to the description of the route
-	// document
-	// 	.querySelector('meta[name="description"]')
-	// 	.setAttribute("main-page", route.description);
+	document
+	.querySelector('meta[name="description"]')
+	.setAttribute("content", route.description);
 
 
-	// Script del slider
+	// get html elements for manual slider
 	const slider = document.querySelector('.img-container')
 	const sliderNavigation = document.querySelectorAll('.miniImage')
-	
+	// Manual Slider script for model page
 	sliderNavigation.forEach( ( imagesList , i )=> {
 		sliderNavigation[i].addEventListener('click',()=>{
 	
@@ -96,7 +96,7 @@ const locationHandler = async () => {
 
 
 
-	// Script para enviar el form
+	// Function to send forms
 	function contactForm(){
 		const $form = document.querySelector(".form");
 
@@ -107,7 +107,7 @@ const locationHandler = async () => {
 			const $response = document.querySelector(".form-response");
 
 			$loader.classList.remove("none");
-
+			// After https://formsubmit.co/ajax/ you must enter the email address
 			fetch("https://formsubmit.co/ajax/mauriciolaratro@gmail.com", {
 				method: "POST",
 				body: new FormData(event.target)
@@ -134,8 +134,7 @@ const locationHandler = async () => {
 	contactForm();
 
 
-
-	// script para dar background al link del header en el que estes posicionado
+	// Indicate the current page
 	const headerLinks = document.querySelectorAll('.header-link')
 
 	headerLinks.forEach( ( linksList , i )=> {
@@ -150,7 +149,7 @@ const locationHandler = async () => {
 	
 	});
 
-	// quitamos el background seleccionado de home cuando estamos en una page diferente a esta
+	// Remove the indicator, from home, when it is not the current page. 
 	const homeLink = document.getElementById('homeLink')
 
 	if (location != "/"){
@@ -158,10 +157,6 @@ const locationHandler = async () => {
 	};
 
 };
-
-
-
-
 
 // create a function that watches the hash and calls the urlLocationHandler
 window.addEventListener("hashchange", locationHandler);
